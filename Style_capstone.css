@@ -1,13 +1,13 @@
-.page{
-    height: 2200px;
+.container{
+    height: 1830px;
 }
 #navbar{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
 }
 .sign_in,.sign_up{
     color: white;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 .about_us{
     margin-top: 60px;
@@ -29,10 +29,90 @@
 .profile{
     margin-left: 60px;
     margin-top: 10px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 .video{
-    z-index: 1;
+    z-index: -1;
+    width: 100%vw;
+}
+.overwrite{
+    color: white;
+    position: relative;
+    bottom: 600px;
+    background-color: unset;
+    text-align: center;
+    font-size: 100px;
+    font-family: serif;
+    font-weight: 600;
+}
+.overwrite-small{
+    color: white;
+    position: relative;
+    bottom: 580px;
+    background-color: unset;
+    text-align: center;
+    font-size: 40px;
+    font-family: serif;
+    font-weight: bold;
+}
+.scroll_down{
+    position: relative;
+    bottom: 380px;
+    text-align: center;
+    background-color: unset;
+    font-size: 30px;
+    font-family: serif;
+    color: white;
+    animation: move 1.5s infinite ease-in;
+}
+@keyframes move{
+    0%,100%{
+    transform: translate(0,0);
+}
+    50%{
+    transform: translate(0px,15px);
+}
+}
+.scroll_down_more{
+    position: relative;
+    bottom: 408px;
+    left: 90px;
+    font-size: 30px;
+    font-family: serif;
+    text-align: center;
+    background-color: unset;
+    color: white;
+    animation: move 1.5s infinite ease-in;
+}   
+.scroll_down_more_2{
+    position: relative;
+    bottom: 458px;
+    left: 90px;
+    font-size: 30px;
+    font-family: serif;
+    text-align: center;
+    background-color: unset;
+    color: white;
+    animation: move 1.5s infinite ease-in;
+}
+.page_button{
+    background-color: rgb(41, 41, 224);
+    font-size: 30px;
+    color: white;
+    border-radius: 100px;
+    height: 80px;
+    width: 200px;
+    position: relative;
+    bottom: 450px;
+    left: 55%;
+    transition: transform 0.5s;
+}
+p{
+    color: white;
+    font-size: 50px;
+    position: relative;
+    bottom: 380px;
+    left: 460px;
 }
 *{
     padding: 0;
@@ -41,4 +121,66 @@
     font-family: sans-serif;
     background-color: rgb(30, 18, 18);
  }
+ .enter_button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 35px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    background: #ff4d4d;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.enter_section {
+    margin-top: 70px;
+    text-align: center;
+    color: white;
+    position: relative;
+
+}
+
+.enter_title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: black;
+    position: relative;
+    bottom: 370px;
+}
+
+.enter_button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: rem;
+    font-weight: bold;
+    background: #ff4d4d;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    position: relative;
+    bottom: 350px;
+    left: 900px;
+}
+
+.enter_button:hover {
+    background: #ff1f1f;
+    transform: scale(1.08);
+}
+.bg_image{
+    position: relative;
+    height: 100px;
+    bottom: 450px;
+}
+ footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
  
